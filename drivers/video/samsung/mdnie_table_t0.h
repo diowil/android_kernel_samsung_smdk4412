@@ -3,6 +3,19 @@
 
 #include "mdnie.h"
 
+static unsigned short tune_cyanogenmod[] = {
+	0x0000, 0x0000,	/*BANK 0*/
+	0x0008, 0x0008,	/*Dither8 UC4 ABC2 CP1 | CC8 MCM4 SCR2 SCC1 | CS8 DE4 DNR2 HDR1*/
+	0x0030, 0x0000,	/*FA cs1 de8 hdr2 fa1*/
+	0x0090, 0x0080,	/*DE egth*/
+	0x00b0, 0x1010,	/*CS hg ry*/
+	0x00b1, 0x1010,	/*CS hg gc*/
+	0x00b2, 0x1010,	/*CS hg bm*/
+	0x00b3, 0x1204,	/*CS weight grayTH*/
+	0x00ff, 0x0000,	/*Mask Release*/
+	END_SEQ, 0x0000,
+};
+
 /* 2013.10.18 */
 static unsigned short tune_dynamic_gallery[] = {
 	0x0000, 0x0000,	/*BANK 0*/
@@ -1075,6 +1088,7 @@ static unsigned short tune_auto_camera[] = {
 struct mdnie_tuning_info tuning_table[CABC_MAX][MODE_MAX][SCENARIO_MAX] = {
 	{
 		{
+			{"cyanogenmod",		tune_cyanogenmod},
 			{"dynamic_ui",		tune_dynamic_ui},
 			{"dynamic_video",	tune_dynamic_video},
 			{"dynamic_video",	tune_dynamic_video},
@@ -1087,6 +1101,7 @@ struct mdnie_tuning_info tuning_table[CABC_MAX][MODE_MAX][SCENARIO_MAX] = {
 			{"dynamic_ebook",	tune_dynamic_ebook},
 			{"email",		tune_dynamic_ui}
 		}, {
+			{"cyanogenmod",		tune_cyanogenmod},
 			{"standard_ui",		tune_standard_ui},
 			{"standard_video",	tune_standard_video},
 			{"standard_video",	tune_standard_video},
@@ -1099,6 +1114,7 @@ struct mdnie_tuning_info tuning_table[CABC_MAX][MODE_MAX][SCENARIO_MAX] = {
 			{"standard_ebook",	tune_standard_ebook},
 			{"email",		tune_standard_ui}
 		}, {
+			{"cyanogenmod",		tune_cyanogenmod},
 			{"natural_ui",		tune_natural_ui},
 			{"natural_video",	tune_natural_video},
 			{"natural_video",	tune_natural_video},
@@ -1111,6 +1127,7 @@ struct mdnie_tuning_info tuning_table[CABC_MAX][MODE_MAX][SCENARIO_MAX] = {
 			{"natural_ebook",	tune_natural_ebook},
 			{"email",		tune_natural_ui}
 		}, {
+			{"cyanogenmod",		tune_cyanogenmod},
 			{"movie_ui",		tune_movie_ui},
 			{"movie_video",		tune_movie_video},
 			{"movie_video",		tune_movie_video},
@@ -1123,6 +1140,7 @@ struct mdnie_tuning_info tuning_table[CABC_MAX][MODE_MAX][SCENARIO_MAX] = {
 			{"movie_ebook",		tune_movie_ebook},
 			{"email",		tune_movie_ui}
 		}, {
+			{"cyanogenmod",		tune_cyanogenmod},
 			{"auto_ui",		tune_auto_ui},
 			{"auto_video",		tune_auto_video},
 			{"auto_video",		tune_auto_video},
