@@ -532,6 +532,6 @@ struct samsung_battery_platform_data {
 	bool battery_standever;
 };
 
-extern bool device_charging;
+extern bool is_cable_attached;
 
 #endif /* __MACH_SAMSUNG_BATTERY_H */
