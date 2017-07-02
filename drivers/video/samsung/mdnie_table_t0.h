@@ -1114,7 +1114,7 @@ struct mdnie_tuning_info tuning_table[CABC_MAX][MODE_MAX][SCENARIO_MAX] = {
 			{"standard_ebook",	tune_standard_ebook},
 			{"email",		tune_standard_ui}
 		}, {
-			{"cyanogenmod",		tune_cyanogenmod},
+			{"natural_ui",		tune_natural_ui},
 			{"natural_ui",		tune_natural_ui},
 			{"natural_video",	tune_natural_video},
 			{"natural_video",	tune_natural_video},
@@ -1127,7 +1127,7 @@ struct mdnie_tuning_info tuning_table[CABC_MAX][MODE_MAX][SCENARIO_MAX] = {
 			{"natural_ebook",	tune_natural_ebook},
 			{"email",		tune_natural_ui}
 		}, {
-			{"cyanogenmod",		tune_cyanogenmod},
+			{"movie_ui",		tune_movie_ui},
 			{"movie_ui",		tune_movie_ui},
 			{"movie_video",		tune_movie_video},
 			{"movie_video",		tune_movie_video},
